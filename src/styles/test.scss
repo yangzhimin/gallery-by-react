@@ -1,0 +1,28 @@
+$highlight-color: #ddd;
+$bg-color:#222;
+html,body{
+	background-color: $bg-color;
+	height:100%;
+	width:100%;
+}
+#app{
+	width:100%;
+	height:100%;
+}
+.stage{
+	width:100%;
+	height:100%;
+	position:relative;
+	background-color:$highlight-color
+}
+.img-sec{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+img-nav{
+	width:100%;
+	position:absolute;
+	bottom:30px;
+	text-align: center;
+}
