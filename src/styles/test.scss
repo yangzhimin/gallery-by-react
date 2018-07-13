@@ -19,6 +19,47 @@ html,body{
 	width:100%;
 	height:100%;
 	position:relative;
+	overflow:hidden;
+	.img-figure{
+		width:220px;
+		height:260px;
+		padding:40px;
+		box-sizing: border-box;
+		background-color:#fff;
+		margin:0;
+		position:absolute;
+		box-shadow: 0 0 12px #ddd;
+		cursor:pointer;
+		transform-style: preserve-3d; 
+    transform-origin: center center;
+		img{
+			width:100%;
+			height:140px;
+		}
+		&.inverse{
+			transform: rotateY(180deg); 
+		}
+		.img-front{
+			backface-visibility:hidden; /*div背对屏幕时不可见*/
+		}
+		.img-back{
+			position:absolute;
+			width:100%;
+			height:100%;
+			top:0;
+			left:0;
+			backface-visibility:hidden; /*div背对屏幕时不可见*/
+			transform: rotateY(180deg); 
+			color:#000;
+		}
+
+	}
+	.img-title{
+		text-align: center;
+		margin-top:20px;
+		color:#a7a2a0;
+		font-size:16px;
+	}
 }
 img-nav{
 	width:100%;
